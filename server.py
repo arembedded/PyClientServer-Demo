@@ -39,6 +39,6 @@ while connected:
   # Receive the data in small chunks and retransmit it
   data = connection.recv(1024)
   if data:
-    print >>sys.stderr, 'Server received "%s"' % data
+    print >>sys.stderr, '(SERVER): received "%s"' % data
     connection.sendall(data)
 

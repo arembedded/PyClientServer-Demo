@@ -37,6 +37,6 @@ while(1):
     data += sock.recv(sent_bytes)
     recv_bytes += len(data)
 
-  print >>sys.stderr, 'received "%s"' % data 
+  print >>sys.stderr, '(CLIENT): received "%s"' % data 
     
 
